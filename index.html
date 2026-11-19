@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+  <meta name="referrer" content="no-referrer"/>
+
+  <!-- Primary SEO Meta Tags -->
+  <title>R Balaji — Python Full Stack Developer &amp; GenAI Specialist</title>
+  <meta name="title" content="R Balaji — Python Full Stack Developer &amp; GenAI Specialist"/>
+  <meta name="description" content="Portfolio of R Balaji. Python Full Stack Developer and Generative AI Specialist with expertise in FastAPI, Flask, React.js, MySQL, and modern web applications."/>
+  <meta name="keywords" content="R Balaji, Balaji, Python Full Stack Developer, FastAPI, Flask, React Developer, Generative AI, Portfolio, Python Developer, Web Developer"/>
+  <meta name="author" content="R Balaji"/>
+  <meta name="robots" content="index, follow"/>
+
+  <!-- Open Graph / Facebook / LinkedIn -->
+  <meta property="og:type" content="website"/>
+  <meta property="og:title" content="R Balaji — Python Full Stack Developer Portfolio"/>
+  <meta property="og:description" content="Explore interactive web apps, REST APIs with FastAPI/Flask, Generative AI integration, and modern frontend interfaces."/>
+  <meta property="og:image" content="assets/balaji_nav_avatar.jpg"/>
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="R Balaji — Portfolio"/>
+  <meta name="twitter:description" content="Python Full Stack Developer &amp; GenAI Enthusiast. Building high-performance APIs and web apps."/>
+  <meta name="twitter:image" content="assets/balaji_nav_avatar.jpg"/>
+
+  <!-- JSON-LD Structured Data Schema for Search Engines -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "R Balaji",
+    "jobTitle": "Python Full Stack Developer & GenAI Enthusiast",
+    "email": "mailto:balajivanyakula@gmail.com",
+    "url": "https://github.com/balajivanyakula",
+    "sameAs": [
+      "https://github.com/balajivanyakula",
+      "https://www.linkedin.com/in/r-balaji-3852a7422/"
+    ],
+    "knowsAbout": ["Python", "FastAPI", "Flask", "React.js", "Django", "MySQL", "SQLite", "Generative AI", "REST APIs"]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+  <!-- Favicon (Circular Tab Icon) -->
+  <link rel="icon" type="image/png" href="assets/favicon.png?v=3.0"/>
+  <link rel="icon" type="image/webp" href="assets/Img_4.webp?v=3.0"/>
+  <link rel="apple-touch-icon" href="assets/favicon.png?v=3.0"/>
+  
+  <!-- Theme Initialization (Prevents flash of unstyled theme on page reload) -->
+  <script>
+    (function() {
+      try {
+        var savedTheme = localStorage.getItem('portfolio_theme');
+        if (savedTheme === 'dark') {
+          document.documentElement.setAttribute('data-theme', 'dark');
+        }
+      } catch (e) {}
+    })();
+  </script>
+  <link rel="stylesheet" href="style.css?v=87.0"/>
+</head>
+<body class="loading">
+
+  <!-- Page Loader -->
+  <div id="pageLoader" aria-hidden="true">
+    <div class="loader-shell">
+      <div class="loader-bar"><div class="loader-progress" id="loaderProgress"></div></div>
+      <div class="loader-dots"><span></span><span></span><span></span></div>
+      <div class="loader-caption">Loading Portfolio</div>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">
+        <img src="assets/balaji_nav_avatar.jpg?v=2.0" alt="R Balaji" class="nav-logo-icon"/>
+        <span class="logo-text">BALAJI</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <!-- Theme Toggle Switch (On: Dark Mode, Off: Light Mode) -->
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark mode" aria-pressed="false" title="Toggle Light / Dark Mode">
+        <span class="theme-toggle-track">
+          <span class="theme-toggle-thumb">
+            <i class="fa-solid fa-sun icon-sun" aria-hidden="true"></i>
+            <i class="fa-solid fa-moon icon-moon" aria-hidden="true"></i>
+          </span>
+        </span>
+      </button>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-text">
+      <div class="hero-badge">Hello, I'm</div>
+      <h1 class="hero-name">
+        <span class="first">R</span>
+        <span class="last">Balaji</span>
+      </h1>
+      <div class="hero-tagline">
+        <span class="typed-text" id="typedText">Python Full Stack Developer</span><span class="typed-cursor">|</span>
+      </div>
+      <p class="hero-desc">
+        Developing scalable web applications and REST APIs using Python, Django, FastAPI, and Flask, with a focus on Generative AI and modern web technologies
+
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-ghost">Get In Touch</a>
+      </div>
+    </div>
+
+    <div class="hero-photo-side">
+      <div class="photo-card-light">
+        <div class="photo-frame" id="photoFrame">
+          <!-- Empty Photo Placeholder (Ready for your future photo) -->
+          <div class="photo-empty-placeholder" id="photoPlaceholder">
+            <i class="fa-regular fa-user" aria-hidden="true"></i>
+          </div>
+          <img src="" alt="R Balaji" class="photo-img" id="heroPhotoImg" style="display:none;"/>
+        </div>
+        <div class="photo-accent top">
+          <div class="accent-dot"></div>
+          <span>Open to work</span>
+        </div>
+        <div class="photo-accent bottom">
+          <span>🎓</span>
+          <span>BCA & MCA</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section-head rv">
+        <p class="section-kicker">About Me</p>
+        <h2 class="section-title">Full-Stack Development & AI</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-visual rv-left">
+          <div class="avatar-wrap">
+            <div class="avatar-core"><span>RB</span></div>
+          </div>
+          <div class="avail-chip">
+            <span class="chip-dot"></span>
+            <span>Available for hire</span>
+          </div>
+          <div class="stats-row">
+            <div class="stat"><strong>82%</strong><span>BCA Score</span></div>
+            <div class="stat"><strong>2+</strong><span>Projects</span></div>
+            <div class="stat"><strong>2</strong><span>Internship</span></div>
+          </div>
+        </div>
+        <div class="about-body rv-right">
+          <p>I’m Balaji, a BCA graduate with an 82% academic score from Emeralds Degree College (SVU). Currently, I’m doing an internship at Dhee Coding Lab, where I’m learning Python Full Stack Development and Generative AI. I’m interested in developing AI tools and web applications and learning more about how AI can be used in real-world projects.</p>
+          <div class="skill-chips">
+            <span>Python</span><span>FastAPI</span><span>Flask</span>
+            <span>React.js</span><span>Django</span><span>MySQL</span>
+            <span>SQLite</span><span>Generative AI</span><span>REST APIs</span><span>Git</span>
+          </div>
+          <a href="assets/R_Balaji_Resume.pdf" download="R_Balaji_Resume.pdf" target="_blank" class="btn btn-outline" id="resumeDownloadBtn" title="Download Balaji's Resume (PDF)">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+            Download Resume
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education & Experience Section -->
+  <section class="education-experience section" id="experience">
+    <div class="container">
+      <div class="section-head rv">
+        <p class="section-kicker">Academic &amp; Professional Journey</p>
+        <h2 class="section-title">Education <span class="highlight-accent">&amp; Experience</span></h2>
+      </div>
+
+      <!-- Education & Experience Timeline Grid -->
+      <div class="edu-exp-timeline-grid">
+        
+        <!-- Education Column (From Image 1) -->
+        <div class="edu-exp-column rv-left">
+          <div class="edu-exp-block-header">
+            <div class="edu-exp-badge-icon education"><i class="fa-solid fa-graduation-cap"></i></div>
+            <h3 class="edu-exp-block-title">Education</h3>
+          </div>
+
+          <div class="edu-exp-card-list">
+            <!-- College 1: Emeralds Degree College -->
+            <div class="timeline-item">
+              <div class="timeline-logo-wrap company-badge">
+                <img src="assets/emeralds_logo.jpg" alt="Emeralds Degree College" class="timeline-logo-img"/>
+              </div>
+              <div class="timeline-content">
+                <h4 class="timeline-heading">Emeralds Degree College, Tirupati Urban</h4>
+                <p class="timeline-subheading">Bachelor of Computer Applications</p>
+                <div class="timeline-meta-row">
+                  <span class="timeline-meta"><i class="fa-regular fa-calendar"></i> Jul 2023 – May 2026</span>
+                  <span class="timeline-meta score-highlight">82% Score</span>
+                </div>
+                <span class="timeline-meta location"><i class="fa-solid fa-location-dot"></i> Tirupati, Andhra Pradesh</span>
+              </div>
+            </div>
+
+            <div class="timeline-divider"></div>
+
+            <!-- College 2: RCR Institute of Technology and Management -->
+            <div class="timeline-item">
+              <div class="timeline-logo-wrap company-badge">
+                <img src="assets/rcr_logo.png" alt="RCR Institute of Technology and Management" class="timeline-logo-img"/>
+              </div>
+              <div class="timeline-content">
+                <h4 class="timeline-heading">RCR Institute of Technology and Management</h4>
+                <p class="timeline-subheading">Master of Computer Applications</p>
+                <span class="timeline-meta"><i class="fa-regular fa-calendar"></i> Aug 2026 – Present</span>
+                <span class="timeline-meta location"><i class="fa-solid fa-location-dot"></i> Tirupati, Andhra Pradesh</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Experience Column (From Image 2) -->
+        <div class="edu-exp-column rv-right">
+          <div class="edu-exp-block-header">
+            <div class="edu-exp-badge-icon experience"><i class="fa-solid fa-briefcase"></i></div>
+            <h3 class="edu-exp-block-title">Experience</h3>
+          </div>
+
+          <div class="edu-exp-card-list">
+            <!-- Experience 1: Dhee Coding Lab -->
+            <div class="timeline-item featured-exp">
+              <div class="timeline-logo-wrap company-badge">
+                <img src="assets/dhee_logo.png" alt="Dhee Coding Lab" class="timeline-logo-img"/>
+              </div>
+              <div class="timeline-content">
+                <h4 class="timeline-heading">Python Full Stack With Gen AI Trainee</h4>
+                <p class="timeline-subheading company-name">Dhee Coding Lab</p>
+                <div class="timeline-exp-footer">
+                  <div class="timeline-exp-meta-group">
+                    <span class="timeline-meta"><i class="fa-regular fa-calendar"></i> Jun 2026 – Present · 6 mos</span>
+                    <span class="timeline-meta location"><i class="fa-solid fa-location-dot"></i> Bengaluru, Karnataka, India</span>
+                  </div>
+                  <div class="timeline-action">
+                    <button type="button" class="btn-cert-preview" id="dheeCertBtn" onclick="openDheeCertModal()" title="View Dhee Coding Lab Certificate">
+                      <i class="fa-solid fa-award"></i>
+                      <span>Certificate</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="skills section" id="skills">
+    <div class="container">
+      <div class="section-head rv">
+        <p class="section-kicker">Technical Stack</p>
+        <h2 class="section-title">Skills &amp; Technologies</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card rv" style="--delay:0s">
+          <div class="sk-icon"><svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div>
+          <h3>Backend &amp; APIs</h3>
+          <div class="sk-bars">
+            <div class="sk-row"><span>Python</span><div class="sk-track"><div class="sk-fill" data-w="92"></div></div><span class="sk-pct">92%</span></div>
+            <div class="sk-row"><span>FastAPI &amp; Flask</span><div class="sk-track"><div class="sk-fill" data-w="88"></div></div><span class="sk-pct">88%</span></div>
+            <div class="sk-row"><span>Django</span><div class="sk-track"><div class="sk-fill" data-w="80"></div></div><span class="sk-pct">80%</span></div>
+          </div>
+        </div>
+        <div class="skill-card rv" style="--delay:.1s">
+          <div class="sk-icon"><svg viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div>
+          <h3>Frontend UI</h3>
+          <div class="sk-bars">
+            <div class="sk-row"><span>React.js</span><div class="sk-track"><div class="sk-fill" data-w="88"></div></div><span class="sk-pct">88%</span></div>
+            <div class="sk-row"><span>HTML5 &amp; CSS3</span><div class="sk-track"><div class="sk-fill" data-w="92"></div></div><span class="sk-pct">92%</span></div>
+            <div class="sk-row"><span>JavaScript</span><div class="sk-track"><div class="sk-fill" data-w="85"></div></div><span class="sk-pct">85%</span></div>
+          </div>
+        </div>
+        <div class="skill-card rv" style="--delay:.2s">
+          <div class="sk-icon"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+          <h3>Databases &amp; AI</h3>
+          <div class="sk-bars">
+            <div class="sk-row"><span>MySQL &amp; SQLite</span><div class="sk-track"><div class="sk-fill" data-w="85"></div></div><span class="sk-pct">85%</span></div>
+            <div class="sk-row"><span>Generative AI</span><div class="sk-track"><div class="sk-fill" data-w="82"></div></div><span class="sk-pct">82%</span></div>
+            <div class="sk-row"><span>REST APIs</span><div class="sk-track"><div class="sk-fill" data-w="90"></div></div><span class="sk-pct">90%</span></div>
+          </div>
+        </div>
+        <div class="skill-card rv" style="--delay:.3s">
+          <div class="sk-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20"/></svg></div>
+          <h3>Tools &amp; Workflow</h3>
+          <div class="sk-bars">
+            <div class="sk-row"><span>Git &amp; GitHub</span><div class="sk-track"><div class="sk-fill" data-w="90"></div></div><span class="sk-pct">90%</span></div>
+            <div class="sk-row"><span>Prompt Engineering</span><div class="sk-track"><div class="sk-fill" data-w="85"></div></div><span class="sk-pct">85%</span></div>
+            <div class="sk-row"><span>Responsive Design</span><div class="sk-track"><div class="sk-fill" data-w="92"></div></div><span class="sk-pct">92%</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <div class="section-head rv">
+        <p class="section-kicker">Portfolio</p>
+        <h2 class="section-title">My Projects</h2>
+      </div>
+      <fieldset class="projects-bouncy-grid">
+        <!-- Box 1: Foodie App (Featured Active) -->
+        <label class="bouncy-card b-card-empty">
+          <input type="radio" name="project_select" value="foodie" checked>
+          <div class="bouncy-card-overlay"></div>
+          
+          <div class="bouncy-collapsed-view">
+            <span class="b-col-num">01</span>
+            <i class="fa-solid fa-utensils b-col-icon"></i>
+            <span class="b-col-text">Foodie App</span>
+          </div>
+
+          <!-- Top Badge -->
+          <span class="b-top-badge"><i class="fa-solid fa-cart-shopping"></i> Full-Stack Web App</span>
+
+          <div class="bouncy-card-content">
+            <div class="b-title-row">
+              <h3 class="b-title">Foodie App</h3>
+            </div>
+            <p class="b-kicker">Interactive Food Ordering &amp; Management Platform</p>
+            <p class="b-desc">Full-stack web application designed for online food ordering, real-time cart checkout, secure multi-user authentication, and a centralized admin control dashboard with SQLite data persistence.</p>
+            <div class="b-stack">
+              <span><i class="fa-brands fa-python"></i> Python</span><span><i class="fa-brands fa-js"></i> JavaScript</span><span><i class="fa-solid fa-database"></i> SQLite</span><span><i class="fa-brands fa-html5"></i> HTML5 / CSS3</span><span><i class="fa-solid fa-shield-halved"></i> Admin Portal</span>
+            </div>
+            <div class="b-actions">
+              <span class="b-coming-soon"><i class="fa-solid fa-laptop-code"></i> In Progress</span>
+              <a href="#" class="b-btn-icon" title="GitHub Repository" onclick="event.preventDefault();"><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+        </label>
+
+        <!-- Box 2: Project #02 (Under Development) -->
+        <label class="bouncy-card b-card-empty">
+          <input type="radio" name="project_select" value="proj2">
+          <div class="bouncy-card-overlay"></div>
+          
+          <div class="bouncy-collapsed-view">
+            <span class="b-col-num">02</span>
+            <i class="fa-solid fa-laptop-code b-col-icon"></i>
+            <span class="b-col-text">Project #02</span>
+          </div>
+
+          <!-- Top Badge -->
+          <span class="b-top-badge"><i class="fa-solid fa-code-branch"></i> In Active Dev</span>
+
+          <div class="bouncy-card-content">
+            <div class="b-title-row">
+              <h3 class="b-title">Project #02</h3>
+            </div>
+            <p class="b-kicker">Under Development — Full-Stack &amp; AI Solution</p>
+            <p class="b-desc">Upcoming full-stack web platform currently in active planning and development. Core system architecture, database models, and RESTful APIs are in progress.</p>
+            <div class="b-stack">
+              <span><i class="fa-brands fa-python"></i> Python</span><span><i class="fa-solid fa-bolt"></i> FastAPI</span><span><i class="fa-brands fa-react"></i> React</span><span><i class="fa-solid fa-database"></i> Database</span>
+            </div>
+            <div class="b-actions">
+              <span class="b-coming-soon"><i class="fa-solid fa-laptop-code"></i> In Progress</span>
+              <a href="#" class="b-btn-icon" title="GitHub Repository" onclick="event.preventDefault();"><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+        </label>
+
+        <!-- Box 3: Empty Placeholder -->
+        <label class="bouncy-card b-card-empty">
+          <input type="radio" name="project_select" value="proj3">
+          <div class="bouncy-card-overlay"></div>
+          
+          <div class="bouncy-collapsed-view">
+            <span class="b-col-num">03</span>
+            <i class="fa-solid fa-robot b-col-icon"></i>
+            <span class="b-col-text">GenAI Agent</span>
+          </div>
+
+          <!-- Top Badge -->
+          <span class="b-top-badge"><i class="fa-solid fa-code-branch"></i> In Active Dev</span>
+
+          <div class="bouncy-card-content">
+            <div class="b-title-row">
+              <h3 class="b-title">Project #03</h3>
+            </div>
+            <p class="b-kicker">Multimodal Autonomous Agent</p>
+            <p class="b-desc">Intelligent agent architecture leveraging LLM function calling, semantic vector memory, and real-time knowledge graphs.</p>
+            <div class="b-stack">
+              <span><i class="fa-solid fa-wand-magic-sparkles"></i> GenAI</span><span><i class="fa-solid fa-diagram-project"></i> LangChain</span><span><i class="fa-solid fa-cubes"></i> Vector DB</span><span><i class="fa-solid fa-microchip"></i> Gemini API</span>
+            </div>
+            <div class="b-actions">
+              <span class="b-coming-soon"><i class="fa-solid fa-laptop-code"></i> In Progress</span>
+              <a href="#" class="b-btn-icon" title="GitHub Repository" onclick="event.preventDefault();"><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+        </label>
+
+        <!-- Box 4: Empty Placeholder -->
+        <label class="bouncy-card b-card-empty">
+          <input type="radio" name="project_select" value="proj4">
+          <div class="bouncy-card-overlay"></div>
+          
+          <div class="bouncy-collapsed-view">
+            <span class="b-col-num">04</span>
+            <i class="fa-brands fa-react b-col-icon"></i>
+            <span class="b-col-text">React Enterprise</span>
+          </div>
+
+          <!-- Top Badge -->
+          <span class="b-top-badge"><i class="fa-brands fa-react"></i> React UI Suite</span>
+
+          <div class="bouncy-card-content">
+            <div class="b-title-row">
+              <h3 class="b-title">Project #04</h3>
+            </div>
+            <p class="b-kicker">Modern Interactive Dashboard</p>
+            <p class="b-desc">Modular React.js application with reactive data visualization, clean component architecture, and high-fidelity dark UI.</p>
+            <div class="b-stack">
+              <span><i class="fa-brands fa-react"></i> React.js</span><span><i class="fa-brands fa-js"></i> TypeScript</span><span><i class="fa-brands fa-css3-alt"></i> Tailwind CSS</span>
+            </div>
+            <div class="b-actions">
+              <span class="b-coming-soon"><i class="fa-solid fa-laptop-code"></i> In Progress</span>
+              <a href="#" class="b-btn-icon" title="GitHub Repository" onclick="event.preventDefault();"><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+        </label>
+
+        <!-- Box 5: Empty Placeholder -->
+        <label class="bouncy-card b-card-empty">
+          <input type="radio" name="project_select" value="proj5">
+          <div class="bouncy-card-overlay"></div>
+          
+          <div class="bouncy-collapsed-view">
+            <span class="b-col-num">05</span>
+            <i class="fa-solid fa-diagram-project b-col-icon"></i>
+            <span class="b-col-text">Data Pipeline</span>
+          </div>
+
+          <!-- Top Badge -->
+          <span class="b-top-badge"><i class="fa-solid fa-network-wired"></i> Automated ETL</span>
+
+          <div class="bouncy-card-content">
+            <div class="b-title-row">
+              <h3 class="b-title">Project #05</h3>
+            </div>
+            <p class="b-kicker">Automated Schema ETL Engine</p>
+            <p class="b-desc">Database migration and automated data analytics pipeline connecting MySQL and SQLite with streaming ingestion.</p>
+            <div class="b-stack">
+              <span><i class="fa-brands fa-python"></i> Python</span><span><i class="fa-solid fa-database"></i> MySQL</span><span><i class="fa-solid fa-server"></i> SQLite</span><span><i class="fa-solid fa-arrows-split-up-and-left"></i> ETL Engine</span>
+            </div>
+            <div class="b-actions">
+              <span class="b-coming-soon"><i class="fa-solid fa-laptop-code"></i> In Progress</span>
+              <a href="#" class="b-btn-icon" title="GitHub Repository" onclick="event.preventDefault();"><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+        </label>
+      </fieldset>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section-head rv contact-head-center">
+        <p class="section-kicker">Contact</p>
+        <h2 class="section-title">Get in Touch <span class="highlight-accent">With Me</span></h2>
+        <p class="section-desc">Have a question or an exciting project? I'm here to help and collaborate.</p>
+      </div>
+
+      <div class="contact-form-card rv">
+        <form class="custom-contact-form" id="contactForm" novalidate autocomplete="off">
+          <div class="form-row">
+            <!-- Full Name -->
+            <div class="input-group">
+              <label for="fname">Full Name</label>
+              <div class="input-box">
+                <i class="fa-regular fa-user input-icon"></i>
+                <input type="text" id="fname" name="name" placeholder="Enter your full name" required maxlength="100" autocomplete="name"/>
+              </div>
+            </div>
+
+            <!-- Email Address -->
+            <div class="input-group">
+              <label for="femail">Email Address</label>
+              <div class="input-box">
+                <i class="fa-regular fa-envelope input-icon"></i>
+                <input type="email" id="femail" name="email" placeholder="Enter your email address" required maxlength="200" autocomplete="email"/>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <!-- Phone Number -->
+            <div class="input-group">
+              <label for="fphone">Phone Number</label>
+              <div class="input-box">
+                <i class="fa-solid fa-phone input-icon"></i>
+                <input type="tel" id="fphone" name="phone" placeholder="Enter your phone number" required maxlength="20" autocomplete="tel"/>
+              </div>
+            </div>
+
+            <!-- Subject -->
+            <div class="input-group">
+              <label for="freason">Subject</label>
+              <div class="input-box">
+                <i class="fa-regular fa-comment-dots input-icon"></i>
+                <input type="text" id="freason" name="reason" placeholder="e.g. Project Inquiry, Hiring, Collaboration" maxlength="150"/>
+              </div>
+            </div>
+          </div>
+
+          <!-- Message -->
+          <div class="input-group full-width">
+            <label for="fmessage">Message</label>
+            <div class="input-box textarea-box">
+              <i class="fa-solid fa-pencil input-icon textarea-icon"></i>
+              <textarea id="fmessage" name="message" rows="5" placeholder="Write your message or project details here..." required maxlength="2000"></textarea>
+            </div>
+          </div>
+
+          <!-- Send Message Button -->
+          <div class="form-action-center">
+            <button type="submit" class="contact-submit-btn" id="submitBtn">
+              <span>Send Message</span>
+              <i class="fa-solid fa-arrow-right btn-arrow"></i>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-row">
+        <div class="footer-info">
+          <p class="footer-copy">© 2026 R Balaji. All rights reserved.</p>
+          <p class="footer-seo-tag">Python Full Stack &amp; GenAI Specialist • Based in India • Available for Opportunities</p>
+          <nav class="footer-quick-nav" aria-label="Footer Quick Links">
+            <a href="#about">About</a>
+            <span class="nav-sep">•</span>
+            <a href="#skills">Skills</a>
+            <span class="nav-sep">•</span>
+            <a href="#projects">Projects</a>
+            <span class="nav-sep">•</span>
+            <a href="assets/R_Balaji_Resume.pdf" target="_blank" download="R_Balaji_Resume.pdf">Resume</a>
+            <span class="nav-sep">•</span>
+            <a href="#contact">Contact</a>
+          </nav>
+        </div>
+        <ul class="wrapper">
+          <li class="icon github">
+            <a href="#" aria-label="GitHub" onclick="event.preventDefault();">
+              <span class="tooltip">GitHub</span>
+              <span><i class="fa-brands fa-github"></i></span>
+            </a>
+          </li>
+          <li class="icon linkedin">
+            <a href="https://www.linkedin.com/in/r-balaji-3852a7422/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <span class="tooltip">LinkedIn</span>
+              <span><i class="fa-brands fa-linkedin-in"></i></span>
+            </a>
+          </li>
+          <li class="icon whatsapp">
+            <a href="https://wa.me/919912696835" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+              <span class="tooltip">WhatsApp</span>
+              <span><i class="fa-brands fa-whatsapp"></i></span>
+            </a>
+          </li>
+          <li class="icon email">
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=balajivanyakula@gmail.com" target="_blank" rel="noopener noreferrer" aria-label="Email" title="Send email to balajivanyakula@gmail.com">
+              <span class="tooltip">Email</span>
+              <span><i class="fa-solid fa-envelope"></i></span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Project Details Modal -->
+  <div class="modal-backdrop" id="projectModalBackdrop"></div>
+  <div class="project-modal" id="projectModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-panel">
+      <button class="modal-close" id="modalClose" aria-label="Close project details">✕</button>
+      <div class="modal-grid">
+        <div class="modal-media">
+          <img id="modalImage" src="" alt=""/>
+        </div>
+        <div class="modal-content">
+          <div class="modal-kicker">Case file</div>
+          <h3 class="modal-title" id="modalTitle"></h3>
+          <p class="modal-subtitle" id="modalSubtitle"></p>
+          <p class="modal-copy" id="modalDesc"></p>
+          <div class="modal-section">
+            <h4>Features</h4>
+            <div class="modal-pill-list" id="modalFeatures"></div>
+          </div>
+          <div class="modal-section">
+            <h4>Technologies</h4>
+            <div class="modal-pill-list" id="modalTech"></div>
+          </div>
+          <div class="modal-section">
+            <h4>Architecture</h4>
+            <p class="modal-copy" id="modalArchitecture"></p>
+          </div>
+          <div class="modal-section">
+            <h4>Challenges &amp; outcomes</h4>
+            <p class="modal-copy" id="modalChallenges"></p>
+          </div>
+          <div class="modal-section">
+            <h4>Performance</h4>
+            <p class="modal-copy" id="modalPerformance"></p>
+          </div>
+          <div class="modal-actions">
+            <a href="#" class="btn btn-primary" id="modalDemo">Live Demo</a>
+            <a href="#" class="btn btn-ghost" id="modalGithub">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Dhee Coding Lab Certificate Popup Modal -->
+  <div class="modal-backdrop" id="dheeCertModalBackdrop"></div>
+  <div class="cert-modal" id="dheeCertModal" role="dialog" aria-modal="true" aria-labelledby="dheeCertModalTitle">
+    <div class="cert-modal-panel">
+      <div class="cert-modal-header">
+        <div class="cert-modal-title" id="dheeCertModalTitle">
+          <img src="assets/dhee_logo.png" alt="Dhee Coding Lab" class="cert-modal-header-logo" />
+          <span>Dhee Coding Lab — Certificate</span>
+        </div>
+        <button class="modal-close" id="dheeCertModalClose" aria-label="Close certificate modal" onclick="closeDheeCertModal()">✕</button>
+      </div>
+      <div class="cert-modal-body">
+        <div class="cert-empty-box" id="dheeCertEmptyBox">
+          <div class="cert-empty-icon-wrap">
+            <img src="assets/dhee_logo.png" alt="Dhee Coding Lab" class="cert-empty-dhee-logo" />
+          </div>
+          <h4 class="cert-empty-title">Certificate Not Yet Uploaded</h4>
+          <!-- Ready image slot for user's certificate -->
+          <img id="dheeCertImg" class="dhee-cert-img" src="" alt="Dhee Coding Lab Certificate" style="display:none;" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Floating Toast Notification Container (Web & Mobile) -->
+  <div id="toastContainer" class="toast-container" aria-live="polite"></div>
+
+  <script src="script.js?v=29.0"></script>
+</body>
+</html>
+
